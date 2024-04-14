@@ -48,3 +48,20 @@
 .mt-10{
     margin-top: 10rem;
 }
+
+body {
+    background-image: url('https://media.istockphoto.com/id/1492560497/es/v%C3%ADdeo/patr%C3%B3n-de-cuadr%C3%ADcula-azul-ne%C3%B3n-con-destellos-en-galaxia-oscura-al-estilo-de-los-80.jpg?s=640x640&k=20&c=lp23BDgCylk0vIuHneprhs9nOXnJz85qpdnOKqnoCg0=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+.color-letra-blanco{
+    color: white;
+}  
+
+.bordered-image {
+    border: 10px solid black; /* Ancho y color del borde */
+    /* Puedes ajustar el ancho y el color del borde según tus preferencias */
+    border-radius: 50px; /* Opcional: para agregar esquinas redondeadas */
+    /* Ajusta el radio de las esquinas según tu preferencia */
+}
