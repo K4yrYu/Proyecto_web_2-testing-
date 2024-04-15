@@ -66,6 +66,12 @@ body {
     /* Ajusta el radio de las esquinas según tu preferencia */
 }
 
+.carousel-img {
+    width: 1200px;
+    height: 630px;
+    object-fit: cover; /* Para mantener la proporción de aspecto */
+  }
+
 /* pie de pagina */
 
 .pie-pagina{
