@@ -50,7 +50,7 @@
 }
 
 body {
-    background-image: url('https://media.istockphoto.com/id/1492560497/es/v%C3%ADdeo/patr%C3%B3n-de-cuadr%C3%ADcula-azul-ne%C3%B3n-con-destellos-en-galaxia-oscura-al-estilo-de-los-80.jpg?s=640x640&k=20&c=lp23BDgCylk0vIuHneprhs9nOXnJz85qpdnOKqnoCg0=');
+    background-image: url('../img/fondo4k.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
