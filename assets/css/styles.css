@@ -72,7 +72,12 @@ body {
     object-fit: cover; /* Para mantener la proporción de aspecto */
   }
 
-/* pie de pagina */
+.catalog-juegos{
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilos del pie de pagina */
 
 .pie-pagina{
     width: 100%;
