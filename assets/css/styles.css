@@ -116,6 +116,9 @@ body {
   }
 
 
+.texto-grande {
+    font-size: 24px; /* Tamaño de fuente personalizado */
+  }
 /*Estilos del pie de pagina */
 
 .pie-pagina{
@@ -193,3 +196,10 @@ body {
         
     }
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+
