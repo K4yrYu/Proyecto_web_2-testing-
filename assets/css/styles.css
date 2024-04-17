@@ -158,3 +158,10 @@ body {
         
     }
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+
