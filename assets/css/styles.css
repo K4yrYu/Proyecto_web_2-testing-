@@ -77,6 +77,45 @@ body {
     align-items: center;
 }
 
+.img-entrada{
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*config cinta*/
+.cinta {
+    background-color: black;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .imagen-container {
+    display: inline-block;
+  }
+  
+  .imagen-container img {
+    height: 50px;
+    margin: 0 10px;
+  }
+  
+  @keyframes desplazar {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .imagen-container img {
+    animation: desplazar 20s linear infinite;
+  }
+
+
 /*Estilos del pie de pagina */
 
 .pie-pagina{
@@ -84,7 +123,6 @@ body {
     background-color: white;
 
 }
-
 .pie-pagina .grupo-1{
     width: 100%;
     max-width: 1200px;
