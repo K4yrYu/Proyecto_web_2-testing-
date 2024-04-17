@@ -119,6 +119,15 @@ body {
 .texto-grande {
     font-size: 24px; /* Tamaño de fuente personalizado */
   }
+
+/*formulario de contacto*/
+.formulario-contacto{
+    display: flex;
+    
+    padding-left: 30px;
+}
+
+
 /*Estilos del pie de pagina */
 
 .pie-pagina{
