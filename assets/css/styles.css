@@ -84,21 +84,20 @@ body {
     margin-right: auto;
 }
 
-/*test*/
 
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-weight: bold;
+/*configur estrellas*/
+.stars-container i {
+    margin-top: 10px;
+    color: gold; /* Color de las estrellas */
+    font-size: 24px; /* Tamaño de las estrellas */
 }
 
-
 /*test*/
 
+
+
+
+/*test*/
 
 /*config cinta*/
 .cinta {
