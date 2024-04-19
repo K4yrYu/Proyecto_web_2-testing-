@@ -92,6 +92,23 @@ body {
     font-size: 24px; /* Tamaño de las estrellas */
 }
 
+/*boton chatea con nosotros*/
+
+#boton {
+    position: fixed;
+    left: 20px;
+    top: 98%;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  
+  .contenido {
+    margin-left: 100px; /* Ajusta el margen izquierdo para que el contenido no se solape con el botón */
+  }
+
+
+
+
 /*test*/
 
 
