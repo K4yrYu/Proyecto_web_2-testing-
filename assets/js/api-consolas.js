@@ -3,86 +3,62 @@
 export const consola = [
     {
         name: "PS5",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/caratula-hollow.jpeg",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/ps5-1.jpeg",
         precio: "550.000"
-        //consolas:
-        //descrip:
     },
     {
         name: "PS4",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/spiderman%20portada.jpg",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/ps4-1.jpeg",
         precio: "430.000"
-        //consolas:
-        //descrip:
     },
     {
-        name: "Xbox Series-X",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/Skyrim_Cover.jpg",
-        precio: "650.000"
-        //consolas:
-        //descrip:
+        name: "Nintendo Switch",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/nintendosw-1.jpeg",
+        precio: "450.000"
     },
     {
-        name: "Dragon Ball Z Kakarot",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/dbz-kakaroto-portada.jpg",
-        precio: "30.000"
-        //consolas:
-        //descrip:
+        name: "Nintendo 3Ds XL",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/nds-1.jpeg",
+        precio: "120.000"
     },
     {
-        name: "MegaMan 11",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/caratula-megaman11.jpeg",
-        precio: "35.000"
-        //consolas:
-        //descrip:
+        name: "Wii",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/wii-1.jpeg", //utilizar este tamaño estandar
+        precio: "120.000"
     },
     {
-        name: "GranBlue Fantasy RISING",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/granb_caratula.png",
-        precio: "53.000"
-        //consolas:
-        //descrip:
+        name: "Steam Deck",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/steamd-consola.jpg",
+        precio: "156.000"
     },
     {
-        name: "Minecraft",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/caratula-minecraft.jpeg",
-        precio: "30.000"
-        //consolas:
-        //descrip:
+        name: "Xbox Series X",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/consola-xbox-seriesx.jpg", //editar tamaño
+        precio: "550.000"
     },
     {
-        name: "Lies of Pi",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/caratula-liesofp.jpeg",
-        precio: "42.000"
-        //consolas:
-        //descrip:
+        name: "PS2",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/ps2-consola.jpg",
+        precio: "72.000"
     },
     {
-        name: "Super Smash Bros Ultimate",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/caratula-smash.jpeg",
-        precio: "52.000"
-        //consolas:
-        //descrip:
+        name: "GameBoyAdvance",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/gameboya-consola.jpg", 
+        precio: "50.000"
     },
     {
-        name: "Dark Souls REMASTERED",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/caratula-dark_souls.jpg", //cambiame
+        name: "Sega Génesis",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/sega-genesis-consola.jpg", 
         precio: "36.000"
-        //consolas:
-        //descrip:
     },
     {
-        name: "Mario Kart 8",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/caratula-mario-kart.png",
-        precio: "42.000"
-        //consolas:
-        //descrip:
+        name: "Maquina Arcade Clasica",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/Maquina-Arcade-Clasica.jpg",
+        precio: "400.000"
     },
     {
-        name: "Pokemon Arceus",
-        img: "https://fdsl.cl/imgs-prog/img-juegos/caratula-arceus.jpeg", //cambiame
+        name: "Nintendo GameCube",
+        img: "https://fdsl.cl/imgs-prog/img-consolas/gamecube-consola.jpg", //estandarizar esta fila con este formato
         precio: "52.000"
-        //consolas:
-        //descrip:
     }
 ]

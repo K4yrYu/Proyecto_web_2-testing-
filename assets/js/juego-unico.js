@@ -6,22 +6,37 @@ const generateJuegoDetailHTML = (juego) => {
         <div class="container mt-3">
             <div class="row justify-content-center">
                 <div class="col-xl-12">
+                    <!-- Tarjeta -->
                     <div class="row mt-3">
                         <div class="col-md-8 col-lg-8 col-xl-8 text-center">
-                            <img src="${juego.img}" class="img-fluid" alt="${juego.precio}" style="max-width: 100%; height: auto;">
+                            <img src="${juego.img}" class="img-fluid" alt="${juego.precio}" style="max-width: 100%; height: 100%;">
                         </div>
                         <div class="col-md-4 col-lg-4 col-xl-4 text-left color-letra-blanco">
                             &nbsp;
-                            <h5 class="card-title" style="font-size: 1.5rem;">${juego.name}</h5>
+                            <h5 class="card-title" style="font-size: 3rem;">${juego.name}</h5>
                             &nbsp;
-                            <h5 class="card-title" style="font-size: 1.5rem;">${juego.precio}</h5>
+                            <h5 class="card-title" style="font-size: 2rem;">${juego.consolas}</h5>
+                            &nbsp;
+                            <h5 class="card-title" style="font-size: 2rem;">${juego.precio}</h5>
                             &nbsp;
                             <button class="btn btn-primary" style="font-size: 1.25rem; padding: 10px 20px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Añadir al Carrito</button>
                         </div>
                     </div>
+                    <
                 </div>
             </div>
         </div>
+    `;
+};
+
+
+const generateJuegoDetalleHTML = (juego) => {
+    return `
+    
+        <div class="col-xl-10 color-letra-blanco font-size: 2rem; mt-5">
+            <p>${juego.descrip}</p>
+        </div>
+    
     `;
 };
 
@@ -50,6 +65,8 @@ const juegoDetailContainer = document.getElementById("juegoDetailContainer");
 // Generar HTML con la información detallada del Digimon y mostrarlo en el contenedor
 if (selectedJuego) {
     juegoDetailContainer.innerHTML = generateJuegoDetailHTML(selectedJuego);
+    detailesjuegosContainer.innerHTML = generateJuegoDetalleHTML(selectedJuego);
 } else {
     juegoDetailContainer.innerHTML = "<p>ERROR, juego no encontrado.</p>";
+    detailesjuegosContainer.innerHTML = "<p>ERROR, juego no encontrado.</p>";
 }

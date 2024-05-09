@@ -9,136 +9,132 @@
     <script src="https://kit.fontawesome.com/2149d9dbc7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <!-- Encabezado -->
-    <div class="row">
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand mr-4" href="index.html">
-                    <img src="./assets/img/MegaGames.jpeg" alt="Icono mega games" style="width: 50px; height: 50px; margin-left: 10px;">
-                    MEGA GAMES
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./juego.html">JUEGOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./consolas.html">CONSOLAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./jugetes.html">JUGUETES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">CONTACTANOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true"></a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                          <a href="carrito.html" class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Carrito</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true"></a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="perfil.html" class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa-solid fa-user"></i></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true"></a>
-                        </li>
+    <Header>
+      <div class="row">
+          <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+              <div class="container-fluid">
+                  <a class="navbar-brand mr-4" href="index.html">
+                      <img src="./assets/img/MegaGames.jpeg" alt="Icono mega games" style="width: 50px; height: 50px; margin-left: 10px;">
+                      MEGA GAMES
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#"></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./juego.html">JUEGOS</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./consolas.html">CONSOLAS</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./jugetes.html">JUGUETES</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./contacto.html">CONTACTANOS</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link disabled" aria-disabled="true"></a>
+                          </li>
                       </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+                      <ul class="navbar-nav ms-auto">
+                          <li class="nav-item">
+                            <a href="carrito.html" class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Carrito</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"></a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="perfil.html" class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa-solid fa-user"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"></a>
+                          </li>
+                        </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+    </Header>
 
-    <!-- Contenido Principal (consola unica)-->
-    <div class="row mt-3 justify-content-center">  
-        <div class="col-6 col-md-6 col-lg-12 col-xl-12 text-center mt-5" style="width: 40rem;">
-            <img src="./assets/img/consolas/ps4-3.png" alt="" class="img-fluid">
-            <div class="stars-container">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
+    <Main>
+      <section class="consola-unica">
+        <!--consola unica mostrado-->
+        <div class="container mt-3">
+          <div class="row justify-content-center">
+              <!-- Aquí se mostrará la información al detalle de cada consola  -->
+              <div id="consolaDetailContainer" class="col-md-8">
+                
+              </div>
+              
+          </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-12 col-xl-6 text-left text-lg-start mt-5 ms-auto"> 
-            <p class="mb-0 mt-2 mt-lg-0 color-letra-blanco texto-grande ">&nbsp;</p>
-            <p class="mb-0 mt-2 mt-lg-0 color-letra-blanco texto-grande ">&nbsp;</p>
-            <h1 class="color-letra-blanco">PS4 </H1>
-            <p class="mb-0 mt-2 mt-lg-0 color-letra-blanco texto-grande ">PRECIO: $530.000</p>
-            <p class="mb-0 mt-2 mt-lg-0 color-letra-blanco texto-grande ">DISPONIBLE EN COLOR: BLANCO - NEGRO</p> 
-            <button class="btn btn-primary mt-3"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Añadir al carrito</button> <!-- Botón "Comprar" -->
+      </section>
+      <section class="ComentariosConsola">
+        <!--Comentarios (boceto) (recuerda hacer api de reseñas)-->
+        <div class="resenasContainer container-fluid mt-10 color-letra-blanco" style="width: 70rem;">
+          <h1>Reseñas</h1>
+          <p class="color-letra-blanco texto-grande">
+              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
+              GamerGal94&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
+              <p class="color-letra-blanco texto-grande">
+              La PS4 es una consola increíblemente versátil. 
+              Desde sus impresionantes gráficos hasta su amplio 
+              catálogo de juegos exclusivos, ofrece una experiencia 
+              de juego inigualable. ¡Una compra que nunca me arrepentiré!</p>
+          <p>&nbsp;</p>
+          <p class="color-letra-blanco texto-grande">
+              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
+              ConsoleCrafter23&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
+              <p class="color-letra-blanco texto-grande">
+              Como propietario de una PS4 desde hace años, puedo 
+              decir con confianza que esta consola ha superado 
+              todas mis expectativas. Su rendimiento sólido, 
+              su interfaz intuitiva y sus exclusivos de alta 
+              calidad hacen que valga cada centavo.</p>
+          <p>&nbsp;</p>
+          <p class="color-letra-blanco texto-grande">
+              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
+              DigitalDreamerX&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>&nbsp;:</p>
+              <p class="color-letra-blanco texto-grande">
+              Me encanta la PS4 por su comunidad de juegos vibrante 
+              y su capacidad para conectar a jugadores de todo el 
+              mundo. Además, la facilidad para compartir capturas 
+              de pantalla y videos a través de las redes sociales 
+              agrega una capa adicional de diversión a la experiencia 
+              de juego.</p>
+          <p>&nbsp;</p>
+          <p class="color-letra-blanco texto-grande">
+              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
+              PlaytimePro456&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
+              <p class="color-letra-blanco texto-grande">
+              Me encanta la PS4 por su comunidad de juegos vibrante 
+              y su capacidad para conectar a jugadores de todo el 
+              mundo. Además, la facilidad para compartir capturas 
+              de pantalla y videos a través de las redes sociales 
+              agrega una capa adicional de diversión a la experiencia 
+              de juego.</p>
+          <p>&nbsp;</p>
+          <p class="color-letra-blanco texto-grande">
+              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
+              GameAddict2020&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-regular fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
+              <p class="color-letra-blanco texto-grande">
+              La PS4 ha sido mi compañera de juego durante años, y no 
+              puedo dejar de elogiar su durabilidad y fiabilidad. A 
+              pesar del lanzamiento de nuevas consolas, sigue siendo 
+              una opción sólida para cualquiera que busque una 
+              experiencia de juego excepcional.</p>
+          <p>&nbsp;</p>
+          
         </div>
-    </div>
+      </section>
 
-    <!--Comentarios creados para el juego de compra-->
-    <div class="resenas-container container-fluid mt-10 color-letra-blanco" style="width: 70rem;">
-        <h1>Reseñas</h1>
-        <p class="color-letra-blanco texto-grande">
-            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-            GamerGal94&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
-            <p class="color-letra-blanco texto-grande">
-            La PS4 es una consola increíblemente versátil. 
-            Desde sus impresionantes gráficos hasta su amplio 
-            catálogo de juegos exclusivos, ofrece una experiencia 
-            de juego inigualable. ¡Una compra que nunca me arrepentiré!</p>
-        <p>&nbsp;</p>
-        <p class="color-letra-blanco texto-grande">
-            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-            ConsoleCrafter23&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
-            <p class="color-letra-blanco texto-grande">
-            Como propietario de una PS4 desde hace años, puedo 
-            decir con confianza que esta consola ha superado 
-            todas mis expectativas. Su rendimiento sólido, 
-            su interfaz intuitiva y sus exclusivos de alta 
-            calidad hacen que valga cada centavo.</p>
-        <p>&nbsp;</p>
-        <p class="color-letra-blanco texto-grande">
-            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-            DigitalDreamerX&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>&nbsp;:</p>
-            <p class="color-letra-blanco texto-grande">
-            Me encanta la PS4 por su comunidad de juegos vibrante 
-            y su capacidad para conectar a jugadores de todo el 
-            mundo. Además, la facilidad para compartir capturas 
-            de pantalla y videos a través de las redes sociales 
-            agrega una capa adicional de diversión a la experiencia 
-            de juego.</p>
-        <p>&nbsp;</p>
-        <p class="color-letra-blanco texto-grande">
-            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-            PlaytimePro456&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
-            <p class="color-letra-blanco texto-grande">
-            Me encanta la PS4 por su comunidad de juegos vibrante 
-            y su capacidad para conectar a jugadores de todo el 
-            mundo. Además, la facilidad para compartir capturas 
-            de pantalla y videos a través de las redes sociales 
-            agrega una capa adicional de diversión a la experiencia 
-            de juego.</p>
-        <p>&nbsp;</p>
-        <p class="color-letra-blanco texto-grande">
-            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-            GameAddict2020&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-regular fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
-            <p class="color-letra-blanco texto-grande">
-            La PS4 ha sido mi compañera de juego durante años, y no 
-            puedo dejar de elogiar su durabilidad y fiabilidad. A 
-            pesar del lanzamiento de nuevas consolas, sigue siendo 
-            una opción sólida para cualquiera que busque una 
-            experiencia de juego excepcional.</p>
-        <p>&nbsp;</p>
-        
-    </div>
+    </Main>
 
     
     <!--Pie de pagina -->
@@ -231,7 +227,8 @@
             <small>&copy; 2024 <b>MegaGames</b> - Todos Los derechos reservados.</small>
           </div>
     </footer>
-
+    <!--escript java-->
+    <script type="module" src="./assets/js/consola-unica.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
