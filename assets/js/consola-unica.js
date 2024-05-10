@@ -17,6 +17,7 @@ const generateConsolaDetailHTML = (consola) => {
                             &nbsp;
                             <h5 class="card-title" style="font-size: 2rem;">${consola.precio}</h5>
                             &nbsp;
+                            <h5>&nbsp</h5>
                             <button class="btn btn-primary" style="font-size: 1.25rem; padding: 10px 20px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Añadir al Carrito</button>
                         </div>
                     </div>

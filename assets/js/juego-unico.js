@@ -19,6 +19,7 @@ const generateJuegoDetailHTML = (juego) => {
                             &nbsp;
                             <h5 class="card-title" style="font-size: 2rem;">${juego.precio}</h5>
                             &nbsp;
+                            <h5>&nbsp</h5>
                             <button class="btn btn-primary" style="font-size: 1.25rem; padding: 10px 20px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Añadir al Carrito</button>
                         </div>
                     </div>
@@ -30,15 +31,21 @@ const generateJuegoDetailHTML = (juego) => {
 };
 
 
+
+
 const generateJuegoDetalleHTML = (juego) => {
     return `
-    
-        <div class="col-xl-10 color-letra-blanco font-size: 2rem; mt-5">
-            <p>${juego.descrip}</p>
+        <div class="container-fluid mt-5 color-letra-blanco">
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="font-size: 2rem;">Resumen del Juego:</h1>
+                    <p class="mt-5" style="font-size: 2rem;">${juego.descrip}</p>
+                </div>
+            </div>
         </div>
-    
     `;
 };
+
 
 
 
@@ -62,7 +69,7 @@ const selectedJuego = getJuegoByName(juegoName);
 // Obtener el contenedor de detalles del juego por su ID
 const juegoDetailContainer = document.getElementById("juegoDetailContainer");
 
-// Generar HTML con la información detallada del Digimon y mostrarlo en el contenedor
+// Generar HTML con la información detallada del juego y mostrarlo en el contenedor
 if (selectedJuego) {
     juegoDetailContainer.innerHTML = generateJuegoDetailHTML(selectedJuego);
     detailesjuegosContainer.innerHTML = generateJuegoDetalleHTML(selectedJuego);

@@ -9,6 +9,7 @@ import { consola } from "./api-consolas.js";
           <img src="${consola.img}" class="card-img-top" alt="${consola.precio}">
           <div class="card-body">
               <h5 class="card-title">${consola.name}</h5>
+              <h5 class="card-title">&nbsp</h5>
               <h5 class="card-title">${consola.precio}</h5>
               <button class="btn btn-primary">Añadir al Carrito</button>
           </div>

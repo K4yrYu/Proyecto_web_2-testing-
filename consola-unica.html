@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <Header>
+    <Header class="container-fluid">
       <div class="row">
           <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
               <div class="container-fluid">
@@ -63,7 +63,7 @@
     </Header>
 
     <Main>
-      <section class="consola-unica">
+      <section class="consola-unica container-fluid">
         <!--consola unica mostrado-->
         <div class="container mt-3">
           <div class="row justify-content-center">
@@ -77,60 +77,120 @@
       </section>
       <section class="ComentariosConsola">
         <!--Comentarios (boceto) (recuerda hacer api de reseñas)-->
-        <div class="resenasContainer container-fluid mt-10 color-letra-blanco" style="width: 70rem;">
-          <h1>Reseñas</h1>
-          <p class="color-letra-blanco texto-grande">
-              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-              GamerGal94&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
-              <p class="color-letra-blanco texto-grande">
-              La PS4 es una consola increíblemente versátil. 
-              Desde sus impresionantes gráficos hasta su amplio 
-              catálogo de juegos exclusivos, ofrece una experiencia 
-              de juego inigualable. ¡Una compra que nunca me arrepentiré!</p>
-          <p>&nbsp;</p>
-          <p class="color-letra-blanco texto-grande">
-              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-              ConsoleCrafter23&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
-              <p class="color-letra-blanco texto-grande">
-              Como propietario de una PS4 desde hace años, puedo 
-              decir con confianza que esta consola ha superado 
-              todas mis expectativas. Su rendimiento sólido, 
-              su interfaz intuitiva y sus exclusivos de alta 
-              calidad hacen que valga cada centavo.</p>
-          <p>&nbsp;</p>
-          <p class="color-letra-blanco texto-grande">
-              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-              DigitalDreamerX&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>&nbsp;:</p>
-              <p class="color-letra-blanco texto-grande">
-              Me encanta la PS4 por su comunidad de juegos vibrante 
-              y su capacidad para conectar a jugadores de todo el 
-              mundo. Además, la facilidad para compartir capturas 
-              de pantalla y videos a través de las redes sociales 
-              agrega una capa adicional de diversión a la experiencia 
-              de juego.</p>
-          <p>&nbsp;</p>
-          <p class="color-letra-blanco texto-grande">
-              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-              PlaytimePro456&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
-              <p class="color-letra-blanco texto-grande">
-              Me encanta la PS4 por su comunidad de juegos vibrante 
-              y su capacidad para conectar a jugadores de todo el 
-              mundo. Además, la facilidad para compartir capturas 
-              de pantalla y videos a través de las redes sociales 
-              agrega una capa adicional de diversión a la experiencia 
-              de juego.</p>
-          <p>&nbsp;</p>
-          <p class="color-letra-blanco texto-grande">
-              <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
-              GameAddict2020&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-regular fa-star" style="color: #FFD43B;"></i>&nbsp;:</p>
-              <p class="color-letra-blanco texto-grande">
-              La PS4 ha sido mi compañera de juego durante años, y no 
-              puedo dejar de elogiar su durabilidad y fiabilidad. A 
-              pesar del lanzamiento de nuevas consolas, sigue siendo 
-              una opción sólida para cualquiera que busque una 
-              experiencia de juego excepcional.</p>
-          <p>&nbsp;</p>
+        <div class="resenas-container container-fluid mt-10 color-letra-blanco" style="max-width: 70rem;">
+          <h1 class="text-center">Comentarios</h1>
+          <h2>&nbsp;</h2>
           
+          <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p class="texto-grande">
+                <i class="fa-solid fa-user"></i>&nbsp;&nbsp; CyberNinjaX&nbsp;
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:
+              </p>
+              <p class="texto-grande">
+                Spider-Man para PS4 es una obra maestra de superhéroes. La jugabilidad fluida,
+                los gráficos impresionantes y la emocionante historia hacen que sea
+                una experiencia inolvidable para cualquier fan de Spidey.
+              </p>
+            </div>
+          </div>
+        
+          <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p class="texto-grande">
+                <i class="fa-solid fa-user"></i>&nbsp;&nbsp; NoobMaster69&nbsp;
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:
+              </p>
+              <p class="texto-grande">
+                Increíble. Swinging por la ciudad de Nueva York nunca se sintió
+                tan bien. Spider-Man para PS4 ofrece una combinación perfecta de
+                acción, exploración y narrativa que te mantendrá enganchado desde
+                el principio hasta el final.
+              </p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p class="texto-grande">
+                <i class="fa-solid fa-user"></i>&nbsp;&nbsp; CyberNinjaX&nbsp;
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:
+              </p>
+              <p class="texto-grande">
+                Spider-Man para PS4 es una obra maestra de superhéroes. La jugabilidad fluida,
+                los gráficos impresionantes y la emocionante historia hacen que sea
+                una experiencia inolvidable para cualquier fan de Spidey.
+              </p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p class="texto-grande">
+                <i class="fa-solid fa-user"></i>&nbsp;&nbsp; CyberNinjaX&nbsp;
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:
+              </p>
+              <p class="texto-grande">
+                Spider-Man para PS4 es una obra maestra de superhéroes. La jugabilidad fluida,
+                los gráficos impresionantes y la emocionante historia hacen que sea
+                una experiencia inolvidable para cualquier fan de Spidey.
+              </p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p class="texto-grande">
+                <i class="fa-solid fa-user"></i>&nbsp;&nbsp; CyberNinjaX&nbsp;
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:
+              </p>
+              <p class="texto-grande">
+                Spider-Man para PS4 es una obra maestra de superhéroes. La jugabilidad fluida,
+                los gráficos impresionantes y la emocionante historia hacen que sea
+                una experiencia inolvidable para cualquier fan de Spidey.
+              </p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p class="texto-grande">
+                <i class="fa-solid fa-user"></i>&nbsp;&nbsp; CyberNinjaX&nbsp;
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;:
+              </p>
+              <p class="texto-grande">
+                Spider-Man para PS4 es una obra maestra de superhéroes. La jugabilidad fluida,
+                los gráficos impresionantes y la emocionante historia hacen que sea
+                una experiencia inolvidable para cualquier fan de Spidey.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Repetir para las otras reseñas -->
         </div>
       </section>
 
