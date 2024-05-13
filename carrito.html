@@ -12,8 +12,30 @@
     />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://kit.fontawesome.com/2149d9dbc7.js" crossorigin="anonymous"></script>
+    <style>
+      /* Estilos CSS para la tarjeta */
+      .card {
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          padding: 16px;
+          margin: 8px;
+          width: 300px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+          max-width: 100%;
+          border-radius: 8px;
+      }
+      .card h3 {
+          margin-top: 8px;
+      }
+      .card p {
+          margin: 8px 0;
+      }
+  </style>
   </head>
   <body>
+    
     <header class="container-fluid">
       <!--Encabezado-->
       <div class="row">
@@ -75,15 +97,20 @@
       </div>
     </header>
 
-    <main>
-      <!--Estructura carrito vacio (vista carro vacio NO FUNCIONAL {aun})-->
-      <div class="row justify-content-center container-fluid">
-        <div class="col-sm-12 sm-12 mt-5 color-letra-blanco" style="width: 75rem;">
-          <img src="./assets/img/kuru-kuru.gif" alt="xd">
-          <p>en desarrollo</p>
-          <a href="index.html" class="btn btn-secondary my-2 my-sm-0" type="submit">&nbsp;Volver</a>
+    <main class="container-fluid color-letra-blanco">
+      <!--
+      <section class="container-fluid">
+        <div id="carritoCompras" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3 color-letra-blanco">
+          contenido del carrito :3
+          <div id="carrito" class="carrito-container"></div>
         </div>
-      </div>
+      </section> 
+    -->
+
+      <section class="container-fluid mt-3">
+        <img src="./assets/img/perfil/ejemplo_del_carrito.png" alt="EJEMPLO DEL CARRO NO FUNCIONAL" style="width: 100%; height: auto; display: block; max-width: 100%;">
+      </section>
+      
     </main>
 
     <div class="container">
@@ -186,5 +213,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script type="module" src="./assets/js/script-carro.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

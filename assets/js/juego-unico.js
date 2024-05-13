@@ -17,10 +17,14 @@ const generateJuegoDetailHTML = (juego) => {
                             &nbsp;
                             <h5 class="card-title" style="font-size: 2rem;">${juego.consolas}</h5>
                             &nbsp;
+                            <h5 class="card-title" style="font-size: 2rem;">${juego.stock}</h5>
+                            &nbsp;
                             <h5 class="card-title" style="font-size: 2rem;">${juego.precio}</h5>
                             &nbsp;
                             <h5>&nbsp</h5>
-                            <button class="btn btn-primary" style="font-size: 1.25rem; padding: 10px 20px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Añadir al Carrito</button>
+                            <button id="btnCarrito" class="btn btn-primary" style="font-size: 1.25rem; padding: 10px 20px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Añadir al Carrito</button>
+                            <h5>&nbsp</h5>
+                            <a href="juego.html" class="btn btn-secondary my-2 my-sm-0" style="font-size: 1.25rem; padding: 10px 20px;" type="submit">Atras</a>
                         </div>
                     </div>
                     <
@@ -29,8 +33,6 @@ const generateJuegoDetailHTML = (juego) => {
         </div>
     `;
 };
-
-
 
 
 const generateJuegoDetalleHTML = (juego) => {
@@ -46,6 +48,22 @@ const generateJuegoDetalleHTML = (juego) => {
     `;
 };
 
+
+const contenedor = document.getElementById("juegoDetailContainer");
+contenedor.addEventListener("click", (event) => {
+  if (event.target.classList.contains("btn-primary")) {
+    // Mostrar la alerta con SweetAlert
+    Swal.fire({
+      title: "¡Producto añadido al carrito!",
+      icon: "success"
+    }).then((result) => {
+      // Redirigir a juego.html después de que el usuario cierre la alerta
+      if (result.isConfirmed) {
+        window.location.href = "juego.html";
+      }
+    });
+  }
+});
 
 
 
@@ -77,3 +95,22 @@ if (selectedJuego) {
     juegoDetailContainer.innerHTML = "<p>ERROR, juego no encontrado.</p>";
     detailesjuegosContainer.innerHTML = "<p>ERROR, juego no encontrado.</p>";
 }
+
+
+
+////////TEST//////////
+
+export let listaCarrito = []; // Lista para almacenar los juegos seleccionados
+
+// Función para agregar un juego al carrito
+function agregarAlCarrito(selectedJuego) {
+    carrito.push(selectedJuego);
+}
+
+
+if (selectedJuego) {
+    agregarAlCarrito(selectedJuego); // Agrega el juego al carrito
+} else {
+    console.error("ERROR, juego no encontrado.");
+}
+///////////////////////////////

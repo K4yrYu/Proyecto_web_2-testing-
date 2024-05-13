@@ -15,10 +15,14 @@ const generateConsolaDetailHTML = (consola) => {
                             &nbsp;
                             <h5 class="card-title" style="font-size: 3rem;">${consola.name}</h5>
                             &nbsp;
+                            <h5 class="card-title" style="font-size: 2rem;">${consola.stock}</h5>
+                            &nbsp;
                             <h5 class="card-title" style="font-size: 2rem;">${consola.precio}</h5>
                             &nbsp;
                             <h5>&nbsp</h5>
                             <button class="btn btn-primary" style="font-size: 1.25rem; padding: 10px 20px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Añadir al Carrito</button>
+                            <h5>&nbsp</h5>
+                            <a href="consolas.html" class="btn btn-secondary my-2 my-sm-0" style="font-size: 1.25rem; padding: 10px 20px;" type="submit">Atras</a>
                         </div>
                     </div>
                     <
@@ -29,7 +33,21 @@ const generateConsolaDetailHTML = (consola) => {
 };
 
 
-
+const contenedor = document.getElementById("consolaDetailContainer");
+contenedor.addEventListener("click", (event) => {
+  if (event.target.classList.contains("btn-primary")) {
+    // Mostrar la alerta con SweetAlert
+    Swal.fire({
+      title: "¡Producto añadido al carrito!",
+      icon: "success"
+    }).then((result) => {
+      // Redirigir a juego.html después de que el usuario cierre la alerta
+      if (result.isConfirmed) {
+        window.location.href = "consolas.html";
+      }
+    });
+  }
+});
 
 
 // Función para obtener el nombre del juego de la URL

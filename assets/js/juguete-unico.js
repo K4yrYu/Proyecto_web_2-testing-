@@ -15,10 +15,14 @@ const generateJugueteDetailHTML = (juguete) => {
                             &nbsp;
                             <h5 class="card-title" style="font-size: 3rem;">${juguete.name}</h5>
                             &nbsp;
+                            <h5 class="card-title" style="font-size: 2rem;">${juguete.stock}</h5>
+                            &nbsp;
                             <h5 class="card-title" style="font-size: 2rem;">${juguete.precio}</h5>
                             &nbsp;
                             <h5>&nbsp</h5>
                             <button class="btn btn-primary" style="font-size: 1.25rem; padding: 10px 20px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Añadir al Carrito</button>
+                            <h5>&nbsp</h5>
+                            <a href="jugetes.html" class="btn btn-secondary my-2 my-sm-0" type="submit">Atras</a>
                         </div>
                     </div>
                     <
@@ -28,7 +32,21 @@ const generateJugueteDetailHTML = (juguete) => {
     `;
 };
 
-
+const contenedor = document.getElementById("jugueteDetailContainer");
+contenedor.addEventListener("click", (event) => {
+  if (event.target.classList.contains("btn-primary")) {
+    // Mostrar la alerta con SweetAlert
+    Swal.fire({
+      title: "¡Producto añadido al carrito!",
+      icon: "success"
+    }).then((result) => {
+      // Redirigir a juego.html después de que el usuario cierre la alerta
+      if (result.isConfirmed) {
+        window.location.href = "jugetes.html";
+      }
+    });
+  }
+});
 
 // Función para obtener el nombre del juego de la URL
 const getJugueteNameFromUrl = () => {
