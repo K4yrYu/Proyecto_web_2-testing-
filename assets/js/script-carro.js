@@ -57,7 +57,7 @@ const obtenerYRenderizarCompras = () => {
 // Función mejorada para generar el HTML de una tarjeta de juegos
 const generateComprasCard = ({ img, name, precio, stock }) => {
     return `
-    <div class="card mb-3" style="width: 100%;">
+    <div class="card mb-3" style="width: 100%; font-size: 3rem;">
         <div class="row g-0">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <img src="${img}" class="img-fluid rounded-start" alt="${name}">
