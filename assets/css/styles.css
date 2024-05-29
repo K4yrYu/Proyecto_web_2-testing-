@@ -110,7 +110,33 @@ body {
 
 
 /*test*/
-  
+ 
+#card-carro-vacio {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    height: auto;
+}
+
+#carritoDeCompras {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacio entre las tarjetas */
+    max-width: 100%; /* Asegurarse de que el contenedor no exceda el tamaño del padre */
+    justify-content: center;
+}
+#carritoDeCompras .card {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 3rem;
+}
+
+#h7{
+    
+    font-size: 3rem;
+}
+
+
 
 
 

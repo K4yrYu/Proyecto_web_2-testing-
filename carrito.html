@@ -35,7 +35,7 @@
   </style>
   </head>
   <body>
-    
+    <!--encabezado-->
     <header class="container-fluid">
       <!--Encabezado-->
       <div class="row">
@@ -98,17 +98,44 @@
     </header>
 
     <main class="container-fluid color-letra-blanco">
-      <!--
-      <section class="container-fluid">
-        <div id="carritoCompras" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3 color-letra-blanco">
-          contenido del carrito :3
-          <div id="carrito" class="carrito-container"></div>
-        </div>
-      </section> 
-    -->
 
-      <section class="container-fluid mt-3">
-        <img src="./assets/img/perfil/ejemplo_del_carrito.png" alt="EJEMPLO DEL CARRO NO FUNCIONAL" style="width: 100%; height: auto; display: block; max-width: 100%;">
+      <section class="container-fluid mt-5">
+          <!--contenido del carrito-->
+          <div id="containerCarro" class="container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5 color-letra-blanco">
+            <div id="carritoDeCompras" class="container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5 color-letra-blanco"></div>
+            <div id="detallesApagar" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-between align-items-center">              
+              <div id="PagoFinalTotal" class="card" style="font-size: 1.5rem; padding: 10px;"></div>
+              <button id="btnConfirmarCompra" class="btn btn-primary" style="font-size: 1.5rem; padding: 10px 20px;">
+                  <i class="fa-solid fa-cart-shopping"></i>&nbsp;CONFIRMAR COMPRA
+              </button>
+          </div>
+            <div id="card-carro-vacio" class="card">
+              <div class="card-header">
+                Carrito
+              </div>
+              <div class="card-body ">
+                <blockquote class="blockquote mb-0">
+                  <p>Por el Momento su Carrito Esta Vacio</p>
+                  <div id="carritoDeCompras" class="container-fluid"></div>
+                  <div class="container">&nbsp;</div>
+                  <div class="container row">
+                    <a href="index.html" class="btn btn-secondary my-2 my-sm-0" style="font-size: 1.25rem; padding: 10px 20px;" type="submit">Volver al Menu Principal</a>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="container-fluid"> 
+              &nbsp;
+            </div>
+            <div id="carritoDeComprasVacio" class="container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt- color-letra-blanco"></div>
+          </div>
+        
+      </section> 
+
+      <section>
+        <div class="container-fluid"> 
+          &nbsp;
+        </div>
       </section>
       
     </main>
@@ -117,30 +144,11 @@
       &nbsp;
     </div>
     
-    <!--Pie de pagina -->
-  <footer class="pie-pagina col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-  <!--cinta-->
-  <div class="cinta">
-    <div class="imagen-container">
-      <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
-    </div>
-    <div class="imagen-container">
-      <img src="https://8-bits.cl/cdn/shop/files/download_8baac7eb-4225-4e13-b12e-daae7a9a6cb0_300x300.jpg?v=1713200987" alt="Xbox Series X">
-    </div>
-    <div class="imagen-container">
-      <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
-    </div>
-    <!-- Repite las imágenes para crear el efecto de scroll infinito -->
-    <div class="imagen-container">
-      <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
-    </div>
-    <div class="imagen-container">
-      <img src="https://8-bits.cl/cdn/shop/files/download_8baac7eb-4225-4e13-b12e-daae7a9a6cb0_300x300.jpg?v=1713200987" alt="Xbox Series X">
-    </div>
-    <div class="imagen-container">
-      <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
-    </div>
-    <div class="imagen-container">
+   <!--Pie de pagina -->
+   <footer class="pie-pagina">
+    <!--cinta-->
+    <div class="cinta">
+      <div class="imagen-container">
         <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
       </div>
       <div class="imagen-container">
@@ -149,6 +157,7 @@
       <div class="imagen-container">
         <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
       </div>
+      <!-- Repite las imágenes para crear el efecto de scroll infinito -->
       <div class="imagen-container">
         <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
       </div>
@@ -159,53 +168,71 @@
         <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
       </div>
       <div class="imagen-container">
-        <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
-      </div>
-      <div class="imagen-container">
-        <img src="https://8-bits.cl/cdn/shop/files/download_8baac7eb-4225-4e13-b12e-daae7a9a6cb0_300x300.jpg?v=1713200987" alt="Xbox Series X">
-      </div>
-      <div class="imagen-container">
-        <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
-      </div>
-      <div class="imagen-container">
-        <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
-      </div>
-      <div class="imagen-container">
-        <img src="https://8-bits.cl/cdn/shop/files/download_8baac7eb-4225-4e13-b12e-daae7a9a6cb0_300x300.jpg?v=1713200987" alt="Xbox Series X">
-      </div>
-      <div class="imagen-container">
-        <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
-      </div>
-  </div>
-    <div class="grupo-1 mt-3">
-      <div class="box">
-        <figure>
-          <a href="">
-            <img src="./assets/img/pagos_online.png" alt="pagos_online">
-          </a>
-        </figure>
-      </div>
+          <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_8baac7eb-4225-4e13-b12e-daae7a9a6cb0_300x300.jpg?v=1713200987" alt="Xbox Series X">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_8baac7eb-4225-4e13-b12e-daae7a9a6cb0_300x300.jpg?v=1713200987" alt="Xbox Series X">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_8baac7eb-4225-4e13-b12e-daae7a9a6cb0_300x300.jpg?v=1713200987" alt="Xbox Series X">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_7159b25d-c6c6-4c59-8170-53852fa64719_300x300.jpg?v=1713201223" alt="PlayStation 5">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_8baac7eb-4225-4e13-b12e-daae7a9a6cb0_300x300.jpg?v=1713200987" alt="Xbox Series X">
+        </div>
+        <div class="imagen-container">
+          <img src="https://8-bits.cl/cdn/shop/files/download_124c15d6-3357-4331-9cb2-c23ec55dde1b_300x300.jpg?v=1713200861" alt="Nintendo Switch">
+        </div>
+    </div>
+      <div class="grupo-1 mt-3">
+        <div class="box">
+          <figure>
+            <a href="">
+              <img src="./assets/img/pagos_online.png" alt="pagos_online">
+            </a>
+          </figure>
+        </div>
 
-      <div class="box">
-        <h1>Sobre Nosotros</h1>
-        <p>
-          Megagames lidera la industria del entretenimiento digital con juegos innovadores y de calidad, 
-          ganando reconocimiento global y lealtad de fans. Nos comprometemos a seguir cautivando la 
-          imaginación de jugadores de todas las edades con nuestras aventuras virtuales.
-        </p>
-      </div>
-      <div class="box">
-        <h2>Siguenos</h2>
-        <div class="red-social">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
+        <div class="box">
+          <h1>Sobre Nosotros</h1>
+          <p>
+            Megagames lidera la industria del entretenimiento digital con juegos innovadores y de calidad, 
+            ganando reconocimiento global y lealtad de fans. Nos comprometemos a seguir cautivando la 
+            imaginación de jugadores de todas las edades con nuestras aventuras virtuales.
+          </p>
+        </div>
+        <div class="box">
+          <h2>Siguenos</h2>
+          <div class="red-social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="grupo-2">
-      <small>&copy; 2024 <b>MegaGames</b> - Todos Los derechos reservados.</small>
-    </div>
+      <div class="grupo-2">
+        <small>&copy; 2024 <b>MegaGames</b> - Todos Los derechos reservados.</small>
+      </div>
   </footer>
 
   <script
@@ -213,7 +240,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
-  <script type="module" src="./assets/js/script-carro.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="./assets/js/script-carro.js"></script>
   </body>
 </html>
