@@ -10,27 +10,33 @@
 <body>
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <form id="login-form" class="container-login">
-            <h1>Login</h1>
-            <h2>Ingresa tus datos para iniciar sesión en Mega-Games</h2>
-            <input type="email" placeholder="Correo Electrónico" id="input-email" class="form-control mb-3">
+            <h1>Sign Up</h1>
+            <h2>Ingresa tus datos para crear tu cuenta en Mega-Games</h2>
+            <input type="email" placeholder="Ingrese su Correo Electrónico" id="input-email" class="form-control mb-3">
             <div class="input-password mb-3">
-                <input type="password" placeholder="Contraseña" id="input-password" class="form-control">
+                <input type="password" placeholder="Crea una Contraseña" id="input-password" class="form-control">
                 <button type="button" class="btn-hide-show">
                     <i class="fa-solid fa-eye" id="show-password"></i>
                     <i class="fa-solid fa-eye-slash" id="hide-password"></i>
                 </button>
             </div>
-            <p class="paragraph-1">
-                ¿Tienes problemas para iniciar sesión?
-            </p>
+
+            <div class="input-password mb-3">
+                <input type="password" placeholder="Confirme su Contraseña" id="input-confirm-password" class="form-control">
+                <button type="button" class="btn-hide-show1">
+                    <i class="fa-solid fa-eye" id="show-confirm-password"></i>
+                    <i class="fa-solid fa-eye-slash" id="hide-confirm-password"></i>
+                </button>
+            </div>
+
             <button type="submit" class="btn-sign-in btn btn-primary btn-block">
-                Iniciar Sesión
+                Crear Cuenta
             </button>
             <p id="error-message" class="error-message" style="color:red; display:none;">
-                Usuario o contraseña no válidos.
+                Contraseñas no coinciden
             </p>
             <p class="paragraph-2">
-                Iniciar sesión con 
+                Crear Cuenta con 
             </p>
             <div class="container-btn-login-whit d-flex justify-content-around">
                 <button type="button" class="btn-login-whit btn btn-outline-secondary">
@@ -43,18 +49,20 @@
                     <i class="fa-brands fa-facebook"></i> Facebook
                 </button>
             </div>
-            <p class="create-account mt-3">Si no tienes una cuenta <a href="Signup.html">Regístrate acá</a></p>
+            <p class="create-account mt-3">¿Ya tienes una cuenta? <a href="index.html">Inicia Sesión acá</a></p>
         </form>
     </div>
     <div class="footer text-center mt-4 color-letra-blanco">
         Copyright &copy; 2024 | Política de Mega-Games
     </div>
 
+    <!--espacio-->
     <div>
-        &nbsp;  
+        &nbsp;
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b045b1a1f2.js" crossorigin="anonymous"></script>
-    <script type="module" src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/script-signup.js"></script>
 </body>
 </html>

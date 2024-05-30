@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color-letra-blanco{
+    color: white;
+}  
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/Megaman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+.container-login {
+    background-color: white;
+    padding: 45px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.container-login h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.container-login h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.input-password {
+    position: relative;
+}
+
+.btn-hide-show {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-hide-show1 {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#show-password {
+    display: none;
+}
+
+#show-confirm-password{
+    display: none;
+}
+
+.paragraph-1 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-sign-in {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.paragraph-2 {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.container-btn-login-whit {
+    gap: 10px;
+}
+
+.btn-login-whit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.btn-login-whit i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.create-account {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.create-account a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+.footer {
+    font-weight: 600;
+}

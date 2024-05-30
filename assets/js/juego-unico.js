@@ -1,6 +1,8 @@
-
-import { agregarAlCarrito, listaCarrito } from './script-carro.js';
 ///// Card juego unico con fetch /////////
+
+//se importa la funcion y la lista desde carrito
+import { agregarAlCarrito, listaCarrito } from './script-carro.js';
+
 
 // Obtener el nombre del juego de la URL
 const params = new URLSearchParams(window.location.search);
@@ -161,7 +163,7 @@ const convertirPrecioANumero = (precio) => {
 
   // Multiplicar por mil para obtener el valor esperado
   const valorMultiplicado = precioNumerico * 1000;
-
+  //retorna el valor final ya convertido
   return valorMultiplicado;
 };
 
