@@ -1,5 +1,5 @@
 
-
+let logged = localStorage.getItem('logged');
 
 //////////////////
 
@@ -102,4 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
   });
+
+///////////////////
+
   

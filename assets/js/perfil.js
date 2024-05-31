@@ -1,3 +1,11 @@
+// Obtener el valor booleano de 'totalPago' del localStorage
+let logged = localStorage.getItem('logged');
+console.log(logged);
+
+
+
+
+//se obtiene el correo del usuario ingresado y sera mostrado al momento de ingresar al perfil
 document.addEventListener('DOMContentLoaded', function() {
     const storedEmail = localStorage.getItem('userEmail');
     if (storedEmail) {
@@ -8,12 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             console.error("No se encontró el elemento 'user-email-display'");
         }
-    } else {
-        console.log('No se ha encontrado el correo electrónico almacenado.');
-    }
+    } 
 });
 
-
+//confi cerrar sesion
 document.addEventListener('DOMContentLoaded', function() {
     const userEmailDisplay = document.getElementById('user-email-display');
     const closeButton = document.getElementById('close-session-btn');
@@ -29,6 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
         closeButton.addEventListener('click', function() {
             // Eliminar el correo electrónico almacenado
             localStorage.removeItem('userEmail');
+            // Cambiar el valor de logged
+            logged = !logged;
+            console.log(logged);
+            // Actualizar el valor en el localStorage
+            localStorage.setItem('logged', logged.toString());
+            // Borrar la variable 'logged' del localStorage
+            localStorage.removeItem('logged');
             // Redirigir a la página de inicio
             window.location.href = 'index.html';
         });
@@ -41,3 +54,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.navbar-nav').appendChild(loginButton);
     }
 });
+
+

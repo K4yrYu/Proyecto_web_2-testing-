@@ -12,4 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 //////////////////////////////////////////
- 
+
+
+// Obtener el valor booleano de 'totalPago' del localStorage
+let logged = localStorage.getItem('logged');
+console.log(logged);

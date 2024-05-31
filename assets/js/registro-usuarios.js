@@ -18,7 +18,7 @@ export const usuario = [
         email: "AlonsoUrr@gmail.com",
         userRut:"29.124.546-k",
         Phone:"1063873540",
-        FTperfil:"", //subir foto alonso
+        FTperfil:"https://fdsl.cl/imgs-prog/usuarios/sonic-user.png", //subir foto alonso
         MedioPago: "Visa MasterCard",
         userDireccion:"las malvinas 420"
     },
