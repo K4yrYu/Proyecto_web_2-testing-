@@ -1,41 +1,33 @@
 // Obtención de elementos del DOM
 const passWordInput = document.querySelector('#input-password');
-const showPasswordBtn = document.querySelector('#show-password');
-const hidePasswordBtn = document.querySelector('#hide-password');
+const togglePasswordBtn = document.querySelector('#toggle-password');
 
 const passWordconfirmInput = document.querySelector('#input-confirm-password');
-const showConfirmPasswordBtn = document.querySelector('#show-confirm-password');
-const hideConfirmPasswordBtn = document.querySelector('#hide-confirm-password');
+const toggleConfirmPasswordBtn = document.querySelector('#toggle-confirm-password');
 
 const btnSignIn = document.querySelector('.btn-sign-in');
 const errorMessage = document.querySelector('#error-message');
 
-// Mostrar contraseña
-showPasswordBtn.addEventListener('click', () => {
-    passWordInput.type = 'text';
-    showPasswordBtn.style.display = 'none';
-    hidePasswordBtn.style.display = 'block';
+// Función para alternar la visibilidad de la contraseña
+const togglePasswordVisibility = (inputField, toggleBtn) => {
+    if (inputField.type === 'password') {
+        inputField.type = 'text';
+        toggleBtn.classList.remove('fa-eye');
+        toggleBtn.classList.add('fa-eye-slash');
+    } else {
+        inputField.type = 'password';
+        toggleBtn.classList.remove('fa-eye-slash');
+        toggleBtn.classList.add('fa-eye');
+    }
+};
+
+// Eventos de clic para mostrar/ocultar contraseña
+togglePasswordBtn.addEventListener('click', () => {
+    togglePasswordVisibility(passWordInput, togglePasswordBtn);
 });
 
-// Ocultar contraseña
-hidePasswordBtn.addEventListener('click', () => {
-    passWordInput.type = 'password';
-    showPasswordBtn.style.display = 'block';
-    hidePasswordBtn.style.display = 'none';
-});
-
-// Mostrar confirmación de contraseña
-showConfirmPasswordBtn.addEventListener('click', () => {
-    passWordconfirmInput.type = 'text';
-    showConfirmPasswordBtn.style.display = 'none';
-    hideConfirmPasswordBtn.style.display = 'block';
-});
-
-// Ocultar confirmación de contraseña
-hideConfirmPasswordBtn.addEventListener('click', () => {
-    passWordconfirmInput.type = 'password';
-    showConfirmPasswordBtn.style.display = 'block';
-    hideConfirmPasswordBtn.style.display = 'none';
+toggleConfirmPasswordBtn.addEventListener('click', () => {
+    togglePasswordVisibility(passWordconfirmInput, toggleConfirmPasswordBtn);
 });
 
 // Validación al hacer clic en el botón de registro
