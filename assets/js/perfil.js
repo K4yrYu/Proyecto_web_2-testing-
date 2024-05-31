@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Si no hay un correo electrónico almacenado, mostrar el botón de inicio de sesión
         const loginButton = document.createElement('a');
         loginButton.textContent = 'Iniciar Sesión';
-        loginButton.href = 'login.html'; // Cambia 'login.html' por la ruta correcta de tu página de inicio de sesión
+        loginButton.href = 'index.html'; // Cambia 'login.html' por la ruta correcta de tu página de inicio de sesión
         loginButton.classList.add('btn', 'btn-secondary', 'my-2', 'my-sm-0' );
         document.querySelector('.navbar-nav').appendChild(loginButton);
     }
