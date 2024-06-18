@@ -16,7 +16,7 @@ console.log('Nombre de la consola:', consolaName); // Verificar el nombre de la 
 // Función para obtener los detalles de la consola por su nombre
 const obtenerDetallesConsola = async (nombre) => {
   try {
-    const response = await fetch('https://run.mocky.io/v3/5b911f00-e002-4557-bab2-cc31fa50c177');
+    const response = await fetch('https://run.mocky.io/v3/45eea02e-8f7c-4db1-987f-3ae9d024a67f');
     if (!response.ok) {
       throw new Error('La solicitud falló');
     }

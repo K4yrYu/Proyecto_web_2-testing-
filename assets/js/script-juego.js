@@ -21,7 +21,7 @@ const generateJuegoCard = ({ img, name, precio, stock }) => {
   // Función para obtener los juegos desde la API y renderizar las tarjetas
   const obtenerYRenderizarJuegos = async () => {
     try {
-      const response = await fetch('https://run.mocky.io/v3/d1f85e57-309c-4feb-afde-e6c146f476e5');
+      const response = await fetch('https://run.mocky.io/v3/25f0df6d-da53-494b-9e56-def4dc281aaa');
       if (!response.ok) {
         throw new Error('La solicitud falló');
       }
@@ -54,7 +54,7 @@ const generateJuegoCard = ({ img, name, precio, stock }) => {
   searchInput.addEventListener("input", async () => {
     const searchTerm = searchInput.value.trim().toLowerCase();
     try {
-      const response = await fetch('https://run.mocky.io/v3/d1f85e57-309c-4feb-afde-e6c146f476e5');
+      const response = await fetch('https://run.mocky.io/v3/25f0df6d-da53-494b-9e56-def4dc281aaa');
       if (!response.ok) {
         throw new Error('La solicitud falló');
       }

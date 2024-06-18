@@ -19,7 +19,7 @@ const generateConsolasCard = ({ img, name, precio, stock }) => {
 // Función para obtener las consolas desde la API y renderizar las tarjetas
 const obtenerYRenderizarConsolas = async () => {
   try {
-      const response = await fetch('https://run.mocky.io/v3/5b911f00-e002-4557-bab2-cc31fa50c177');
+      const response = await fetch('https://run.mocky.io/v3/45eea02e-8f7c-4db1-987f-3ae9d024a67f');
       if (!response.ok) {
           throw new Error('La solicitud falló');
       }
@@ -52,7 +52,7 @@ const searchInput = document.getElementById("nombre");
 searchInput.addEventListener("input", async () => {
   const searchTerm = searchInput.value.trim().toLowerCase();
   try {
-      const response = await fetch('https://run.mocky.io/v3/5b911f00-e002-4557-bab2-cc31fa50c177');
+      const response = await fetch('https://run.mocky.io/v3/45eea02e-8f7c-4db1-987f-3ae9d024a67f');
       if (!response.ok) {
           throw new Error('La solicitud falló');
       }

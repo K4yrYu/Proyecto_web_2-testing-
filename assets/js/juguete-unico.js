@@ -14,7 +14,7 @@ console.log('Nombre del juguete:', jugueteName); // Verificar el nombre del jugu
 // Función para obtener los detalles del juguete por su nombre
 const obtenerDetallesJuguete = async (nombre) => {
   try {
-    const response = await fetch('https://run.mocky.io/v3/e7444942-34a2-4929-9166-f9dc80625a47');
+    const response = await fetch('https://run.mocky.io/v3/e0e8e13a-064e-4c5e-8969-3bbcc3b2120c');
     if (!response.ok) {
       throw new Error('La solicitud falló');
     }
@@ -101,7 +101,7 @@ contenedorJ.addEventListener("click", async (event) => {
         }).then((result) => {
           // Redirigir a juego.html después de que el usuario cierre la alerta
           if (result.isConfirmed) {
-            window.location.href = "consolas.html";
+            window.location.href = "jugetes.html";
           }
         });
       }
